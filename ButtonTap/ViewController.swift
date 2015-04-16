@@ -20,6 +20,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func baconButtonPressed(sender: UIButton) {
+        // sender is the object that called this method
+        // it can be either the Bacon or Tuna button
+        let title = sender.titleForState(.Normal)!
+        theLabel.text = "You clicked the \(title) button"
+        
+    }
+    
+    
+    @IBOutlet weak var theLabel: UILabel!
+    
 
 }
 
